@@ -1,0 +1,54 @@
+#loadingAnimation {
+  right: 100px
+}
+
+#loadingImage {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    -webkit-animation-name: loadingImageAnimation; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: loadingImageAnimation;
+    animation-duration: 4s;
+}
+
+#loadingText {
+  -webkit-animation-name: loadingTextAnimation; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+  animation-name: loadingTextAnimation;
+  animation-duration: 4s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes loadingImageAnimation {
+  0%   {left:0px; top:0px;}
+  25%  {left:210px;}
+  50%  {left:210px;}
+  75%  {left:210px;}
+  100% {left:210px;}
+}
+
+/* Standard syntax */
+@keyframes loadingImageAnimation {
+    0%   {left:0px; top:0px;}
+    25%  {left:210px;}
+    50%  {left:210px;}
+    75%  {left:210px;}
+    100% {left:210px;}
+}
+
+@-webkit-keyframes loadingTextAnimation {
+    0%   {display:none;}
+    25%  {display:none;}
+    50%  {display:inline;}
+    75%  {display:inline;}
+    100% {display:inline;}
+}
+
+@keyframes loadingTextAnimation {
+    0%   {display:none;}
+    25%  {display:none;}
+    50%  {display:inline;}
+    75%  {display:inline;}
+    100% {display:inline;}
+}
