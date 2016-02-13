@@ -3,17 +3,29 @@
   <head>
     <link rel="stylesheet" href="animation.css">
     <link rel="stylesheet" href="bootstrap.min.css">
-    <style>
-      body{
-        text-align: center;
-      }
-    </style>
   </head>
-  <body>
-    <div>
-      <h3 id="loadingAnimation"><img id="loadingImage" src="https://raw.githubusercontent.com/PlanHubMe/PlanHub/master/public/images/icon128.png"><span id="loadingText">PlanHub</span></h3>
+  <body class="loaderBody">
+    <div class="loader">
+      <div class="cssload-preloader cssload-loading">
+      	<span class="cssload-slice"></span>
+      	<span class="cssload-slice"></span>
+      	<span class="cssload-slice"></span>
+      	<span class="cssload-slice"></span>
+      	<span class="cssload-slice"></span>
+      	<span class="cssload-slice"></span>
+      </div>
       <br>
-      <p>Loading...</p>
+      <div class="loaderText">
+        <h1>PlanHub</h1>
+        <h5>Loading...</h1>
+      <!-- Taking too long text: -->
+      <!--
+        <br>
+        <h4>Well, this is aquard...</h4>
+        <p>Loading is taking longer than normal. Something might be wrong on our end. Try reloading the page by pushing the button below.</p>
+        <a class="btn-xs btn-default">Reload</a>
+      -->
+      </div>
     </div>
   </body>
 </html>
